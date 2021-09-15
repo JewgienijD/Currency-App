@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="EN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Currency App</title>
+    </head>
+    <body>
+        <header class="header">
+            <h1>Currency App</h1>
+        </header>
+        <main class="page">
+            <div class="page__rates">
+                <div class="page__rates_header">
+                    <div class="page__rates_text">NBP buying and selling rates table</div>
+                    <form class="page__rates_form">
+                        <input type="radio" id="usd" value="usd" name="curr_code" class="input_code">
+                        <label for="usd">USD</label>
+                        <input type="radio" id="eur" value="eur" name="curr_code" checked class="input_code">
+                        <label for="eur">EUR</label>
+                        <input type="radio" id="chf" value="chf" name="curr_code" class="input_code">
+                        <label for="chf">CHF</label>
+                        <input type="radio" id="gbp" value="gbp" name="curr_code" class="input_code">
+                        <label for="gbp">GBP</label>
+                    </form>
+                    <button class="page__rates_get-rates">Get rates</button>
+                </div>
+                <div class="page__rates_table">
+                    <table>
+                        <tr>
+                          <th>Date</th>
+                          <th>Currency</th>
+                          <th>Bid</th>
+                          <th>Ask</th>
+                        </tr>
+                        <tr>
+                            <td id=table-date></td>
+                            <td id=table-currency></td>
+                            <td id=table-bid></td>
+                            <td id=table-ask></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>           
+        </main>
+        
+
+    <script src="./js/index.js"></script>
+    </body>
+</html>
