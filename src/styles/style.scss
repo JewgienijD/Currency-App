@@ -1,3 +1,60 @@
+@import './basic.scss';
 @import './actual.scss';
 @import './charts.scss';
 @import './history.scss';
+
+body {
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header {
+    text-align: center;
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.page {
+    background-color: rgb(255, 255, 255);
+    margin: auto 5%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    &__menu {
+        border-radius: 16px;
+        margin: auto 20%;
+        position: relative;
+        top: -20px;
+        &_link {
+            background-color:#f0f5fa;
+            flex-basis: 33.3%;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+            &:hover {
+                cursor: pointer;
+                background-color: rgb(235, 235, 235);
+            }
+        } 
+        ul {
+            list-style: none;
+            display: flex;
+            font-size: 16px;
+            align-items: center;
+            a {
+                text-decoration: none;
+                color: #333b46;
+                vertical-align: middle;
+                span {
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    
+    .material-icons {
+        color: #333b46;
+    }
+} 

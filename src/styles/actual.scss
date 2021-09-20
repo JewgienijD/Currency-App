@@ -1,0 +1,14 @@
+@import './basic.scss';
+
+.page__rates {
+    text-align: center;
+    &_table {
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        table,th,td {
+            border: 1px solid red;
+            border-collapse: collapse;
+        }
+    }
+}
