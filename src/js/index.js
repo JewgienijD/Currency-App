@@ -1,2 +1,4 @@
 import '../styles/style.scss';
-import './app.js';
+import './rates.js';
+import './charts.js';
+import './dom.js';

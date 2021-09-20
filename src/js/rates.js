@@ -1,5 +1,3 @@
-console.log('Hello Web');
-
 const chooseCodeForm = document.querySelector('.page__rates_form');
 const getRatesBtn = document.querySelector('.page__rates_get-rates');
 const tableDate = document.querySelector('#table-date');
@@ -35,6 +33,8 @@ function getCleanTable(){
     tableBid.innerHTML = '';
     tableAsk.innerHTML = '';
 }
+
+
 
 
 
