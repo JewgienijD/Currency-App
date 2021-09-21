@@ -28,7 +28,9 @@
             <div class="page__container">
                 <section class="page__rates">
                     <div class="page__rates_header">
-                        <div class="page__rates_text">NBP buying and selling rates table</div>
+                        <div class="page__rates_text">
+                           <h3>Please, select the currency</h3>
+                        </div>
                         <form class="page__rates_form">
                             <input type="radio" id="usd" value="usd" name="curr_code" class="input_code">
                             <label for="usd">USD</label>
@@ -39,23 +41,24 @@
                             <input type="radio" id="gbp" value="gbp" name="curr_code" class="input_code">
                             <label for="gbp">GBP</label>
                         </form>
-                        <button class="page__rates_get-rates">Get rates</button>
+                        <button class="page__rates_get-rates">GET RATES</button>
                     </div>
                     <div class="page__rates_table">
                         <table>
-                            <tr>
-                              <th>Date</th>
-                              <th>Currency</th>
-                              <th>Bid</th>
-                              <th>Ask</th>
-                            </tr>
-                            <tr>
-                                <td id=table-date></td>
-                                <td id=table-currency></td>
-                                <td id=table-bid></td>
-                                <td id=table-ask></td>
-                            </tr>
-                        </table>
+                            <caption>NBP buying and selling rates table on:
+                                <span class="page__rates_table-date"></span>
+                            </caption>
+                            <thead>
+                                <tr>
+                                    <th>CURRENCY</th>
+                                    <th>CODE</th>
+                                    <th>RATE</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table__body">
+                               
+                            </tbody>
+                        </table> 
                     </div>
                 </section>
                 <section class="page__charts charts">
