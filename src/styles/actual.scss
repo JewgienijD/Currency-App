@@ -2,13 +2,38 @@
 
 .page__rates {
     text-align: center;
+    margin-top: 15px;
+    &_form {
+        margin-top: 10px;
+        font-weight: 900;
+        color: #333b46;
+    }
+    &_get-rates {
+        margin-top: 15px;
+        background-color: #2465bf;
+        font-size: 16px;
+        font-weight: 700;
+        border-radius: 48px;
+        border: none;
+        color: white;
+        padding: 5px 10px;
+        &:hover {
+            cursor: pointer;
+            background-color: #447cca;
+        }
+    }
     &_table {
         border: 1px solid black;
+        margin-top: 30px;
+        padding: 10px;
         display: flex;
         justify-content: center;
         table,th,td {
             border: 1px solid red;
             border-collapse: collapse;
+        }
+        td,th {
+            padding: 50px;
         }
     }
 }
