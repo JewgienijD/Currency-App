@@ -82,7 +82,56 @@
                         <canvas id="myChart"></canvas>
                     </div>
                 </section>
-                <section class="page__history history"></section>
+                <section class="page__history">
+                    <div class="page__history_header">
+                        <div class="page__history_text">
+                           <h3>Please, select the currency</h3>
+                        </div>
+                        <form class="page__history_form">
+                            <label for="page__history_currency">Choose a currency:</label>
+                            <select id="page__history_currency" name="currencies">
+                              <option value="usd">USD</option>
+                              <option value="eur">EUR</option>
+                              <option value="aud">AUD</option>
+                              <option value="cad">CAD</option>
+                              <option value="huf">HUF</option>
+                              <option value="chf">CHF</option>
+                              <option value="gbp">GBP</option>
+                              <option value="uah">UAH</option>
+                              <option value="jpy">JPY</option>
+                              <option value="czk">CZK</option>
+                              <option value="nok">NOK</option>
+                              <option value="rub">RUB</option>
+                              <option value="brl">BRL</option>
+                              <option value="cny">CNY</option>
+                            </select>
+                            <label for="page__history_date">Choose a date:</label>
+                            <input type="date" id="page__history_date">
+                        </form>
+                        <button class="page__history_show-rates">SHOW RATES</button>
+                        <div class="page__history_table">
+                            <table>
+                                <caption>NBP buying and selling rates table on:
+                                    <span class="page__history_table-date"></span>
+                                </caption>
+                                <thead>
+                                    <tr>
+                                        <th>DATE</th>
+                                        <th>CURRENCY</th>
+                                        <th>CODE</th>
+                                        <th>RATE</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="page__history_table-body">
+                                        <td id="history_date"></td>
+                                        <td id="history_currency"></td>
+                                        <td id="history_code"></td>
+                                        <td id="history_rate"></td>
+                                </tbody>
+                            </table> 
+                        </div>
+                    </div>
+                </section>
             </div>
         </main>
         
