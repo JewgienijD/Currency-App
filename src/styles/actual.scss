@@ -8,8 +8,11 @@
         display: flex;
         justify-content: center;
         table,th,td {
-            border: 1px solid red;
+            min-width: 70%;
+            border: 1px solid #9d9d9e;
             border-collapse: collapse;
+            background-color: #f0f5fa;
+            text-align: center;
         }
         td,th {
             padding: 10px;

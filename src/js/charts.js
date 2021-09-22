@@ -24,7 +24,7 @@ const chartsPage = (function(){
   //build chart
   function getChart(rates, period, currency){
     const ctx = document.getElementById('myChart').getContext('2d');
-    
+
     //do data content check of the chart
     if (window.myLine !== undefined && window.myLine !== null) {
       window.myLine.destroy() 
@@ -61,6 +61,8 @@ const chartsPage = (function(){
     return periodArray;
   }
   
+  //display default chart
+  getDatasForChart();
 })()
 
 
