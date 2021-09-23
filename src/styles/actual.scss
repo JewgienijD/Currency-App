@@ -2,17 +2,27 @@
 
 .page__rates {
     &_table {
-        border: 1px solid black;
-        margin-top: 30px;
+        margin-top: 10px;
         padding: 10px;
         display: flex;
         justify-content: center;
+        caption {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
         table,th,td {
             min-width: 70%;
-            border: 1px solid #9d9d9e;
+            border: 2px solid #2465bf;
             border-collapse: collapse;
-            background-color: #f0f5fa;
+            background-color: #fff;
             text-align: center;
+        }
+        th {
+            background-color: #2465bf;
+            color:  #fff;
+        }
+        td {
+            color: #333b46;
         }
         td,th {
             padding: 10px;

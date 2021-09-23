@@ -11,8 +11,12 @@ body {
 .header {
     text-align: center;
     color: #fff;
+    font-weight: 700;
     margin-top: 30px;
     margin-bottom: 50px;
+    h3 {
+        margin-top: 20px;
+    }
 }
 
 .page {
@@ -26,6 +30,10 @@ body {
         margin: auto 20%;
         position: relative;
         top: -20px;
+        @media(max-width: 468px) {
+            margin: auto 5%;
+            top: -30px;
+        }
         &_link {
             background-color:#f0f5fa;
             flex-basis: 33.3%;
@@ -33,11 +41,23 @@ body {
             text-decoration: none;
             font-size: 18px;
             padding: 10px;
+            &:first-child {
+                border-top-left-radius: 16px;
+                border-bottom-left-radius: 16px;
+            }
+            &:last-child {
+                border-top-right-radius: 16px;
+                border-bottom-right-radius: 16px;
+            }
             &:hover {
                 cursor: pointer;
                 background-color: rgb(235, 235, 235);
             }
         } 
+        ._active {
+            color: #fff;
+            background-color: #408df8;
+        }
         ul {
             list-style: none;
             display: flex;
@@ -58,3 +78,27 @@ body {
         color: #333b46;
     }
 } 
+
+._form {
+    background-color: #487bc2;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+._button{
+    margin: 20px auto 10px auto;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #2465bf;
+      &:hover {
+          cursor: pointer;
+          background-color: #487bc2;
+          transform: scale(1.05);
+      }
+}
+

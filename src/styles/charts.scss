@@ -2,4 +2,15 @@
 
 .page__charts {
     display: none;
+    &_header {
+        text-align: center;
+        text-align: center;
+    }
+    &_form {
+        display: flex;
+        justify-content: center;
+    }
+    #page__charts_currency {
+        margin-right: 15px;
+    }
 }

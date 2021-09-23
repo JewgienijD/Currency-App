@@ -2,4 +2,36 @@
 
 .page__history {
     display: none;
+    text-align: center;
+    &_form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #page__history_currency {
+        margin-right: 15px;
+    }
+    &_table {
+        margin-top: 10px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        table,th,td {
+            min-width: 70%;
+            border: 2px solid #2465bf;
+            border-collapse: collapse;
+            background-color: #fff;
+            text-align: center;
+        }
+        th {
+            background-color: #2465bf;
+            color:  #fff;
+        }
+        td {
+            color: #333b46;
+        }
+        td,th {
+            padding: 10px;
+        }
+    }
 }
