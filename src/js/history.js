@@ -12,7 +12,7 @@ const historyPage = (function(){
     function getDatasFromApi(){
         const currency = document.querySelector('#page__history_currency');
         const date = document.querySelector('#page__history_date');
-        fetch(`http://api.nbp.pl/api/exchangerates/rates/a/${currency.value}/${date.value}/`, {mode:'cors'})
+        fetch(`https://api.nbp.pl/api/exchangerates/rates/a/${currency.value}/${date.value}/`, {mode:'cors'})
           .then(response=>response.json())
           .then(response=>sendDatasToTable(response.rates[0].effectiveDate,response.currency,response.code,response.rates[0].mid))
     }

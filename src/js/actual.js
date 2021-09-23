@@ -1,7 +1,7 @@
 const actualRatesPage = (function(){
 
     const getData = (function(){
-        fetch(`http://api.nbp.pl/api/exchangerates/tables/a/`, {mode:'cors'})
+        fetch(`https://api.nbp.pl/api/exchangerates/tables/a/`, {mode:'cors'})
           .then(response => response.json())
           .then(function(response){
             showTable(response[0].rates)
@@ -10,7 +10,7 @@ const actualRatesPage = (function(){
 
     const getActualDate = (function(){
         const actualDate = document.querySelector('.page__rates_table-date');
-        fetch(`http://api.nbp.pl/api/exchangerates/tables/a/`, {mode:'cors'})
+        fetch(`https://api.nbp.pl/api/exchangerates/tables/a/`, {mode:'cors'})
           .then(response => response.json())
           .then(function(response){
             actualDate.innerHTML = response[0].effectiveDate;
