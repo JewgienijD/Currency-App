@@ -12,5 +12,15 @@
     }
     #page__charts_currency {
         margin-right: 15px;
+        @media(max-width: 660px) {
+            margin-right: 0;
+            margin-bottom: 15px;
+            flex-basis: 100%;
+        }
+    }
+    #page__charts_period{
+        @media(max-width: 660px) {
+            flex-basis: 100%;
+        }
     }
 }

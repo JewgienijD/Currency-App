@@ -25,14 +25,16 @@ body {
     border-radius: 8px;
     display: flex;
     flex-direction: column;
+    @media(max-width: 660px) {
+        margin: auto;
+    }
     &__menu {
         border-radius: 16px;
         margin: auto 20%;
         position: relative;
         top: -20px;
-        @media(max-width: 468px) {
-            margin: auto 5%;
-            top: -30px;
+        @media(max-width: 660px) {
+            margin-bottom:0;
         }
         &_link {
             background-color:#f0f5fa;
@@ -85,6 +87,11 @@ body {
     font-weight: 700;
     padding: 10px 15px;
     border-radius: 4px;
+    @media(max-width: 660px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 ._button{

@@ -6,9 +6,16 @@
         padding: 10px;
         display: flex;
         justify-content: center;
+        @media(max-width: 660px) {
+            margin-top: 0;
+            padding-top: 0;
+        }
         caption {
             font-size: 24px;
             margin-bottom: 10px;
+            @media(max-width: 660px) {
+                font-size: 18px;
+            }
         }
         table,th,td {
             min-width: 70%;
